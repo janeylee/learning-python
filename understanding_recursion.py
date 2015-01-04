@@ -23,3 +23,13 @@ print is_power_of_two(65)
 print is_power_of_two(64)
 
 
+'''
+Print out the nth number of the Fibonacci sequence.
+'''
+def fib(n):
+
+    if n == 0:
+        return 1
+    elif n == 1:
+        return 1
+    return fib(n-1) + fib(n-2)
