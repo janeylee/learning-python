@@ -43,9 +43,7 @@ def gcd(a,b):
 	if a%b == 0:
 		return b
 	else:
-		rem = a%b
-		a = b
-		b = rem
+		a, b = b, a%b
 	return gcd(a,b)
 
 print gcd(210, 45)
