@@ -33,3 +33,19 @@ def fib(n):
     elif n == 1:
         return 1
     return fib(n-1) + fib(n-2)
+
+'''
+Find the greatest common denominator of two numbers a and b. 
+'''
+def gcd(a,b):
+	if a < b:
+		a, b = b, a
+	if a%b == 0:
+		return b
+	else:
+		rem = a%b
+		a = b
+		b = rem
+	return gcd(a,b)
+
+print gcd(210, 45)
